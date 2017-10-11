@@ -1,26 +1,21 @@
-import React, { Component, PropTypes  } from 'react';
-import fetch from 'isomorphic-fetch'
+import React, { Component } from 'react';
 
 class Page extends Component {
 
-  static propTypes = {
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired
-  }
-  
     render() {
 
-      const { id , title} = this.props.page;
+      console.log(this.props)
+      const { id , title } = this.props;
+
         return (
-
-              <tr>
-                <th>{id}</th>
-                <td>{title}</td>
-                <td>
+            <tr>
+               <th>{id}</th>
+               <td>{title}</td>
+              <td>
                   <a href='javascript:void(0)'>Show</a>
-                </td>
-              </tr>
-
+              </td>
+            </tr> 
+          
         );
       }
 }
