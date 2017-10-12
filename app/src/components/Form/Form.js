@@ -15,18 +15,21 @@ class Form extends Component {
         event.preventDefault();
         // const data = new FormData(event.target);
         
-        const data = [{
-             "title": this.state.title,
-             "content": this.state.content
-         }];
+        const { title , content } = this.state; 
+        var data = {
+            "title": title,
+            "content": content
+        }
          console.log(data)
-        fetch('http://localhost:4000/pages', {
-          method: 'POST',
-          body: {
-            "title": this.state.title,
-            "content": this.state.content
-            },
-        });
+         fetch('http://localhost:4000/pages', {
+            method: 'post',
+            body: JSON.stringify(data),
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            }
+          })
+
       }
       
       onChange = (e) => {
