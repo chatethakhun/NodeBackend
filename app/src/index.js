@@ -1,11 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
 
 import { browserHistory } from 'react-router';
 
-import Routes from './routes';
+//import Routes from './routes';
+import { createStore } from 'react-redux'
 
-ReactDOM.render(<Routes history={browserHistory} />, document.getElementById('root'));
-registerServiceWorker();
+
+import HomePage from './containers/HomePage'
+
+render(
+      <HomePage />
+  ,document.getElementById('root'));
+
+
+//Routes history={browserHistory}
