@@ -6,7 +6,7 @@ export const FlexContainer = styled.div`
     align-items: center;
 `
 export const NavBar = styled.div`
-    height: 100px;
+    height: 50px;
     width: 100%;
     background-color: #333333;
 `
