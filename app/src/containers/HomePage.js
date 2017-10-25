@@ -1,13 +1,20 @@
 import React from 'react'
 
 
-import App from '../components/App'
+
+
+import { NavBar, FlexContainer } from '../theme/'
+import {H1} from '../components/H1/'
 
 
 class HomePage extends React.Component {
     render() {
         return (
-            <App />
+            <NavBar>
+                <FlexContainer>
+                    <H1 value={'MY COLLECTION GUNDAM'}></H1>
+                </FlexContainer>
+            </NavBar>
         )
     } 
 }

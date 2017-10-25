@@ -5,7 +5,7 @@ import './index.css';
 import { browserHistory } from 'react-router';
 
 //import Routes from './routes';
-import { createStore } from 'react-redux'
+// import { createStore } from 'react-redux'
 
 
 import HomePage from './containers/HomePage'
