@@ -3,19 +3,23 @@ import React from 'react'
 
 
 
-import { NavBar, FlexContainer } from '../theme/'
+import { NavBar, GridContainer } from '../theme/'
 import {H1} from '../components/H1/'
-import {H2} from '../components/H2/'
+import {A} from '../components/A/'
 
 
 class HomePage extends React.Component {
     render() {
         return (
             <NavBar>
-                <FlexContainer>
-                    <H1 value={'MY COLLECTION GUNDAM'}></H1>
-                    <H2 value={'My facebook'} />
-                </FlexContainer>
+                <GridContainer>
+                    <H1 value={'MY COLLECTION GUNDAM'} />
+                    <A value={'My Facebook'} />
+                </GridContainer>
+                <GridContainer>
+                    <div>fdsfsd</div>
+                    <div>fdsfs</div>
+                </GridContainer>
             </NavBar>
         )
     } 
